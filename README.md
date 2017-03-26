@@ -23,9 +23,9 @@ CREATE TABLE `libmatch` (
 ) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 ```
 ## 实验室发布系统富文本编辑器截图
-![image](https://github.com/say-hello-user/lab/blob/master/image/main.png)
-## 实验室发布系统整体截图
 ![image](https://github.com/say-hello-user/lab/blob/master/image/title.png)
+## 实验室发布系统整体截图
+![image](https://github.com/say-hello-user/lab/blob/master/image/main.png)
 ## 实验室发布系统预览截图
 ### 预览的URL地址为：http://127.0.0.1:8080/lab/servlet/ListFileServlet?id=29 id为发布文章的id
 ![image](https://github.com/say-hello-user/lab/blob/master/image/look.png)
