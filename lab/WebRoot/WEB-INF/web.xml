@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>lab</display-name>
+	<servlet>
+		<servlet-name>UploadHandleServlet</servlet-name>
+		<servlet-class>me.gacl.web.controller.UploadHandleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadHandleServlet</servlet-name>
+		<url-pattern>/servlet/UploadHandleServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListFileServlet</servlet-name>
+		<servlet-class>me.gacl.web.controller.ListFileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListFileServlet</servlet-name>
+		<url-pattern>/servlet/ListFileServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DownLoadServlet</servlet-name>
+		<servlet-class>me.gacl.web.controller.DownLoadServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>imageUploadServlet</servlet-name>
+    <servlet-class>me.gacl.web.controller.imageUploadServlet</servlet-class>
+  </servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>DownLoadServlet</servlet-name>
+		<url-pattern>/servlet/DownLoadServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>imageUploadServlet</servlet-name>
+    <url-pattern>/servlet/imageUploadServlet</url-pattern>
+  </servlet-mapping>
+    
+    <welcome-file-list>
+    	<welcome-file>/upload.jsp</welcome-file>
+    </welcome-file-list>
+
+
+
+
+</web-app>
