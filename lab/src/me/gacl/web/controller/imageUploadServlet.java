@@ -38,8 +38,8 @@ public class imageUploadServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// 上传文件存储路径，可根据自己需要改变。
-		String savePath = "E:\\myeclipsework2\\.metadata\\.me_tcat7\\webapps\\lab\\image";
-
+		String savePath = this.getServletContext().getRealPath(
+				"/image");
 		File file = new File(savePath);
 		// 判断上传文件的保存目录是否存在
 		if (!file.exists() && !file.isDirectory()) {
